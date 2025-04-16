@@ -2,146 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ganpal | Java Backend Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandra | Senior Software Engineer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+      background-color: #f2f4f8;
       color: #333;
     }
-    header {
-      background-color: #24292e;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
+
+header {
+  background: linear-gradient(to right, #232526, #414345);
+  color: white;
+  text-align: center;
+  padding: 0.8rem 1rem 1.2rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8rem; /* Further reduced font size for compactness */
+  margin: 0;
+  letter-spacing: 0.5px; /* Slightly reduced spacing */
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.icons {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+}
+
+
+	
+    .icons span {
+      display: inline-block;
+      margin: 0.3rem 1rem;
     }
-    section {
-      max-width: 800px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
       margin: 2rem auto;
       padding: 0 1rem;
+      gap: 2rem;
     }
-    h1, h2 {
-      color: #24292e;
+    .left {
+      flex: 1;
+      min-width: 280px;
     }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+    .right {
+      flex: 2;
+      min-width: 300px;
+    }
+    .profile-pic {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     .card {
       background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease;
     }
-    .job {
-      background: #fff;
-      padding: 1rem;
-      border-left: 5px solid #0366d6;
-      margin-bottom: 1rem;
-      border-radius: 6px;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      color: #1d3557;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       background-color: #eaeaea;
-    }
-    a {
-      color: #0366d6;
+      font-size: 0.9rem;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
   <header>
-    <h1>Ganpal</h1>
-    <p>Senior Java Backend Engineer | 10+ Years Experience</p>
+    <h1>P Chandra sekhar</h1>
+    <p>Senior Software Engineer</p>
+    <div class="icons">
+      <span><i class="fas fa-briefcase"></i> 10+ Years Experience</span>
+      <span><i class="fas fa-phone"></i> +91-8072885823</span>
+      <span><i class="fas fa-envelope"></i> chandu.java3@gmail.com</span>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate Java backend developer with over a decade of experience building scalable, secure, and high-performance applications. My expertise lies in Java, Spring Boot, RESTful APIs, microservices, and Azure cloud. I enjoy mentoring, writing clean code, and solving complex problems.
-    </p>
-  </section>
-
-  <section>
-    <h2>Work Experience</h2>
-
-    <div class="job">
-      <h3>Lead Backend Engineer – ABC Tech</h3>
-      <p><em>2020 – Present</em></p>
-      <ul>
-        <li>Designed and implemented microservices using Spring Boot & Docker for financial systems</li>
-        <li>Led a team of 6 developers; introduced CI/CD with GitHub Actions</li>
-        <li>Worked with Azure Functions and Cosmos DB to build serverless modules</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Senior Software Engineer – XYZ Corp</h3>
-      <p><em>2015 – 2020</em></p>
-      <ul>
-        <li>Built scalable REST APIs serving over 1M requests/day</li>
-        <li>Integrated OAuth2 security and API Gateway solutions</li>
-        <li>Mentored junior engineers and conducted internal Java workshops</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Software Engineer – TechSoft Solutions</h3>
-      <p><em>2012 – 2015</em></p>
-      <ul>
-        <li>Developed internal tools using Java, JSP, and Spring MVC</li>
-        <li>Maintained legacy codebases and gradually modernized backend logic</li>
-      </ul>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">Java</div>
-      <div class="card">Spring Boot</div>
-      <div class="card">REST APIs</div>
-      <div class="card">Microservices</div>
-      <div class="card">Azure Functions</div>
-      <div class="card">Docker & Kubernetes</div>
-      <div class="card">CI/CD (GitHub Actions, Jenkins)</div>
-      <div class="card">SQL & NoSQL Databases</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="projects">
+  <div class="container">
+    <div class="left">
       <div class="card">
-        <h3>Smart Invoice System</h3>
-        <p>Built a cloud-native invoice processing system using Spring Boot, Azure Functions, and Cosmos DB.</p>
+        <img src="official-passport-size-photo.jpg" alt="Chandra" class="profile-pic">
       </div>
       <div class="card">
-        <h3>API Gateway Platform</h3>
-        <p>Designed and developed a scalable API gateway with OAuth2 and rate-limiting using Spring Cloud Gateway.</p>
+        <h2>Skills</h2>
+        <ul>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>REST APIs</li>
+          <li>Microservices</li>
+          <li>Azure Functions</li>
+          <li>Docker & Kubernetes</li>
+          <li>CI/CD (GitHub Actions, Jenkins)</li>
+          <li>SQL & NoSQL Databases</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Personal Info</h2>
+        <p><strong>City:</strong> Noida</p>
+        <p><strong>Country:</strong> India</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Chandra" target="_blank">linkedin.com/in/Chandra</a></p>
       </div>
     </div>
-  </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ganpal@example.com">ganpal@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/ganpal" target="_blank">github.com/ganpal</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ganpal" target="_blank">linkedin.com/in/ganpal</a></p>
-  </section>
+    <div class="right">
+      <div class="card">
+        <h2>Profile Summary</h2>
+        <p>
+          Software Architect with 10 years of experience in building scalable and secure enterprise software systems using Java, Spring Boot, and modern cloud-native technologies. Strong track record in microservices, clean code practices, and mentoring teams to deliver high-performance solutions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science</strong> - XYZ University, 2012</p>
+      </div>
+
+      <div class="card">
+        <h2>Work Experience</h2>
+        <p><strong>Senior Software Engineer</strong> - HCL Technologies (2015 - Present)</p>
+        <ul>
+          <li>Architected and led cloud-based microservices for enterprise apps using Spring Boot and Azure.</li>
+          <li>Built solutions for invoice automation and device management platforms.</li>
+        </ul>
+        <p><strong>Software Engineer</strong> - ABC Pvt Ltd (2012 - 2015)</p>
+        <ul>
+          <li>Worked on core backend systems, integrating REST APIs and legacy systems for financial services clients.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Ganpal. Built with ❤️ and Java.</p>
+    <p>&copy; 2025 Chandra. Built with ❤️ and Java.</p>
   </footer>
-
 </body>
 </html>
-
